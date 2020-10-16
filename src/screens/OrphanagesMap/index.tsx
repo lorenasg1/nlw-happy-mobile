@@ -23,6 +23,10 @@ const OrphanagesMap = () => {
     navigation.navigate('Orphanage');
   };
 
+  const handleNavigateToCreateOrphanage = () => {
+    navigation.navigate('SelectMapPosition');
+  };
+
   return (
     <Container>
       <MapViewContainer
@@ -56,7 +60,7 @@ const OrphanagesMap = () => {
       <Footer>
         <FooterText>2 orfanatos encontrados</FooterText>
 
-        <CreateOrphanageButton>
+        <CreateOrphanageButton onPress={handleNavigateToCreateOrphanage}>
           <Feather name="plus" size={20} color="#fff" />
         </CreateOrphanageButton>
       </Footer>
