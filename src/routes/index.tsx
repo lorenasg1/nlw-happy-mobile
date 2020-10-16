@@ -40,7 +40,7 @@ const Routes = () => {
           component={OrphanageData}
           options={{
             headerShown: true,
-            header: () => <Header title="Informe  os dados ddo orfanato" />,
+            header: () => <Header title="Dados da casa de acolhimento" />,
           }}
         />
       </Navigator>
