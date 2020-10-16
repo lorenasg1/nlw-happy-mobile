@@ -8,11 +8,11 @@ export const Container = styled.ScrollView`
 `;
 
 export const ImagesContainer = styled.View`
-  height: 240;
+  height: 240px;
 `;
 
 export const ImageItem = styled.Image`
-  width: ${Dimensions.get('window').width};
+  width: ${Dimensions.get('window').width}px;
   height: 240px;
 `;
 
@@ -22,7 +22,7 @@ export const DetailsContainer = styled.View`
 
 export const Title = styled.Text`
   color: #4d6f80;
-  font-size: 30;
+  font-size: 30px;
   font-family: 'Nunito_700Bold';
 `;
 
@@ -46,7 +46,7 @@ export const MapViewContainer = styled(MapView)`
   height: 150px;
 `;
 
-export const RoutesContainer = styled.View`
+export const RoutesButton = styled.TouchableOpacity`
   padding: 16px;
   align-items: center;
   justify-content: center;
@@ -87,6 +87,13 @@ export const ScheduleItemGreen = styled.View`
   border: 1px solid #a1e9c5;
   border-radius: 20px;
   padding: 20px;
+`;
+
+export const ScheduleItemRed = styled.View`
+  background: #edfff6;
+  border: 1px solid #ff669d;
+  border-radius: 20px;
+  padding: 20px;
   padding-bottom: 44px;
 `;
 
@@ -103,6 +110,10 @@ export const ScheduleTextBlue = styled.Text`
 
 export const ScheduleTextGreen = styled.Text`
   color: #37c77f;
+`;
+
+export const ScheduleTextRed = styled.Text`
+  color: #ff669d;
 `;
 
 export const ContactButton = styled(RectButton)`
