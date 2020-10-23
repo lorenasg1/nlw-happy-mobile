@@ -63,16 +63,6 @@ const OrphanageData = () => {
   const handleCreateOrphanage = async () => {
     const { latitude, longitude } = params.position;
 
-    console.log({
-      name,
-      about,
-      instructions,
-      latitude,
-      longitude,
-      opening_hours,
-      open_on_weekends,
-    });
-
     const data = new FormData();
 
     data.append('name', name);
